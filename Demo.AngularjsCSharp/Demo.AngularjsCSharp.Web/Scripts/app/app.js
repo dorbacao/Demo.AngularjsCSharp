@@ -1,3 +1,1 @@
-﻿function app() {
-    alert('app');
-}
+﻿

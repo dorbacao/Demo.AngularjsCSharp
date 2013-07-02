@@ -1,20 +1,21 @@
 ﻿
-angular
-    .module('myApp', [
-        'myApp.ctrl.list',
-        'myApp.ctrl.detail'
-    ])
-    .config(['$routeProvider', '$locationProvider', function ($routeProvider, $locationProvider) {
+var $app_home = angular.module('app.home',[]).config(['$routeProvider', '$locationProvider', function ($routeProvider, $locationProvider) {
 
-        // Specify the three simple routes ('/', '/About', and '/Contact')
         $routeProvider.when('/', {
-            templateUrl: '/Home/List',
-            controller: 'listCtrl',
+            templateUrl: '/Home/Login',
+            controller: 'loginController',
         });
-        $routeProvider.when('/detail/:id', {
-            templateUrl: '/Home/Detail',
-            controller: 'detailCtrl',
+
+        $routeProvider.when('/Home/Login', {
+            templateUrl: '/Home/Login',
+            controller: 'loginController',
         });
+
+        $routeProvider.when('/Congregacao/Lista', {
+            templateUrl: '/Congregacao/Lista',
+            controller: 'congregacaoController',
+        });
+
         $routeProvider.otherwise({
             redirectTo: '/'
         });

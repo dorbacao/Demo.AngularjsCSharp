@@ -6,14 +6,14 @@ using System.Web.Mvc;
 
 namespace Demo.AngularjsCSharp.Web.Controllers
 {
-    public class HomeController : Controller
+    public class CongregacaoController : Controller
     {
-        public ActionResult Index()
+        public ActionResult Lista()
         {
-            return View();
+            return PartialView();
         }
 
-        public ActionResult Login()
+        public ActionResult Detalhe()
         {
             return PartialView();
         }

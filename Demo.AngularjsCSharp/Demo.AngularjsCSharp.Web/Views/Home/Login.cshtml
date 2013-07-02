@@ -1,5 +1,11 @@
-﻿@{
-    ViewBag.Title = "Login";
-}
-
-<h2>Login</h2>
+﻿<br />
+<form class="form-signin">
+    <h2 class="form-signin-heading">pastoreia.me</h2>
+    <input type="text" class="input-block-level" ng-model="usuario.login" placeholder="login ou email">
+    <input type="password" class="input-block-level" ng-model="usuario.senha"  placeholder="senha">
+    <label class="checkbox">
+        <input type="checkbox" value="true" >
+        Me lembre
+    </label>
+    <button class="btn btn-large btn-primary" ng-click="logar()" >Entrar</button>
+</form>

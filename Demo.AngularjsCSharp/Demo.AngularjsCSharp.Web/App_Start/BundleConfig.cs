@@ -32,7 +32,8 @@ namespace Demo.AngularjsCSharp.Web
 
             bundles.Add(new ScriptBundle("~/bundles/app").Include(
                         "~/Scripts/app/app.js",
-                        "~/Scripts/app/home/app.*"));
+                        "~/Scripts/app/home/app.home.module.js",
+                        "~/Scripts/app/home/app.home.controllers.js"));
 
             bundles.Add(new StyleBundle("~/Content/css").Include("~/Content/site.css"));
 
