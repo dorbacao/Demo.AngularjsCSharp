@@ -18,6 +18,10 @@ namespace Demo.AngularjsCSharp.Web
             bundles.Add(new ScriptBundle("~/bundles/jqueryui").Include(
                         "~/Scripts/jquery/jquery-ui-{version}.js"));
 
+            bundles.Add(new ScriptBundle("~/bundles/toastr").Include(
+                        "~/Scripts/toastr.js"));
+
+
             bundles.Add(new ScriptBundle("~/bundles/jqueryval").Include(
                         "~/Scripts/jquery/jquery.unobtrusive*",
                         "~/Scripts/jquery/jquery.validate*"));
@@ -36,6 +40,8 @@ namespace Demo.AngularjsCSharp.Web
                         "~/Scripts/app/home/app.home.controllers.js"));
 
             bundles.Add(new StyleBundle("~/Content/css").Include("~/Content/site.css"));
+
+            bundles.Add(new StyleBundle("~/Content/toastr").Include("~/Content/toastr.css"));
 
             bundles.Add(new StyleBundle("~/Content/bootstrap").Include("~/Content/bootstrap.css","~/Content/bootstrap-responsive.css"));
 

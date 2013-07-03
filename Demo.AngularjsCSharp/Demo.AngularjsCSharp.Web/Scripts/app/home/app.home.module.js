@@ -1,5 +1,8 @@
 ﻿
-var $app_home = angular.module('app.home',[]).config(['$routeProvider', '$locationProvider', function ($routeProvider, $locationProvider) {
+//Registrando Modulos
+var $app_home = angular.module('app.home', []);
+
+$app.config(['$routeProvider', '$locationProvider', function ($routeProvider, $locationProvider) {
 
         $routeProvider.when('/', {
             templateUrl: '/Home/Login',
